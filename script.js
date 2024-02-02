@@ -34,7 +34,7 @@ button.addEventListener("click", function() {
   else {
     minus.classList.remove("show");
     plus.classList.remove("hide");
-    para1.classList.remove("hide")
+    para1.classList.remove("show");
   }
 })
 
