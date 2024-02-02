@@ -3,50 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="../faq-accordion-main/css/style.css">
-  
   <title>Frontend Mentor | FAQ accordion</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    html {
-      font-size: 16px;
-    }
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <main class="container">
     <div class="faq-title">
       <img src="../faq-accordion-main/assets/images/icon-star.svg" alt="">
-      <h1>FAQs</h1>
+      <h2>FAQs</h2>
     </div>
     
     <div class="accordion">
-
       <div class="accordion-item">
-        <button id="accordion-button-1 aria-expanded="false">
-          <span class="accordion-title">What is Frontend Mentor, and how will it help me?</span>
-          <span class="icon" aria-hidden="true"></span>
+        <p class="accordion-title">What is Frontend Mentor, and how will it help me?</p>
+        <button id="accordion-button-1" aria-expanded="false">
+          <img id="plus--id" src="./assets/images/icon-plus.svg" alt="">
+          <img id="minus--id" src="./assets/images/icon-minus.svg" alt="">
+          <!-- <span class="icon" aria-hidden="true"></span> -->
         </button>
-        <div class="accordion-content">
-          <p>
+        <!-- <div class="accordion-content"> -->
+          <p id="ans-1">
             Frontend Mentor offers realistic coding challenges to help developers improve their 
             frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
             all levels and ideal for portfolio building.
           </p>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="accordion-item">
-        <button id="accordion-button-2 aria-expanded="false">
+        <button id="accordion-button-2" aria-expanded="false">
           <span class="accordion-title">Is Frontend Mentor free?</span>
-          <span class="icon"></span>
+          <span class="icon" aria-hidden="true"></span>
         </button>
         <div class="accordion-content">
           <p>
@@ -59,9 +49,9 @@
       </div>
 
       <div class="accordion-item">
-        <button id="accordion-button-3 aria-expanded="false">
+        <button id="accordion-button-3" aria-expanded="false">
           <span class="accordion-title">Can I use Frontend Mentor projects in my portfolio?</span>
-          <span class="icon"></span>
+          <span class="icon" aria-hidden="true"></span>
         </button>
         <div class="accordion-content">
           <p>
@@ -73,11 +63,11 @@
       </div>
 
       <div class="accordion-item">
-        <button id="accordion-button-4 aria-expanded="false">
+        <button id="accordion-button-4" aria-expanded="false">
           <span class="accordion-title">
             How can I get help if I'm stuck on a Frontend Mentor challenge?
           </span>
-          <span class="icon"></span>
+          <span class="icon" aria-hidden="true"></span>
         </button>
         <div class="accordion-content">
           <p>
@@ -91,10 +81,10 @@
     </div>
   </main>
 
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
