@@ -29,17 +29,16 @@ body {
   background-position: -70px 0px;
 }
 .container {
-  /* max-width: 1440px; */
+  max-width: 1440px;
+  width: 450px;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
   padding: 20px;
   background-color: var(--White);
   border-radius: 1rem;
   box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.1);
 }
-.accordion {
-  /* width: min-content; */
-}
+
 .faq-title {
   display: flex;
   align-items: center;
@@ -53,13 +52,13 @@ body {
 .accordion-item {
   border-bottom: 1px solid var(--Light-pink);
   padding: 5px 0;
-  width: max-content;
 }
 
 .accordion .button--1 {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 5px 0;
 }
 
