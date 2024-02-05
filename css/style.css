@@ -13,9 +13,9 @@
   --Grayish-purple: hsl(292, 16%, 49%);
   --Dark-purple: hsl(292, 42%, 14%);
 }
-html {
+/* html {
   font-size: 16px;
-}
+} */
 body {
   display: flex;
   flex-direction: column;
@@ -29,129 +29,95 @@ body {
   background-position: -70px 0px;
 }
 .container {
-  max-width: 450px;
-  /* min-height: 300px; */
+  /* max-width: 1440px; */
   margin: 0 auto;
   position: relative;
-  
   padding: 20px;
   background-color: var(--White);
   border-radius: 1rem;
   box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.1);
+}
+.accordion {
+  /* width: min-content; */
 }
 .faq-title {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.accordion .accordion-item {
-  border-bottom: 1px solid #e5e5e5;
+.faq-title h2 {
+  font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
 }
-.accordion .accordion-item button [aria-expanded=true] {
-  border-bottom: 1px solid hsl(275, 100%, 97%);
+
+.accordion-item {
+  border-bottom: 1px solid var(--Light-pink);
+  padding: 5px 0;
+  width: max-content;
 }
-.accordion button {
-  position: relative;
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  color: var(--Dark-purple);
-  font-size: 0.9rem;
+
+.accordion .button--1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 0;
+}
+
+.accordion-title {
   font-weight: 600;
-  border: none;
-  background: none;
-  outline: none;
+  font-size: 12px;
+  font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.accordion button:hover,
-.accordion button:focus {
-  cursor: pointer;
+
+.button--1 img {
+  /* position: absolute; */
+  align-self: flex-end;
+  right: 0;
+}
+.accordion-item .accordion-content {
   color: var(--Grayish-purple);
-}
-.accordion button:hover::after,
-.accordion button:focus::after {
-  cursor: pointer;
-  color: var(--Grayish-purple);
-  border: 1px solid hsl(275, 100%, 97%);
-}
-.accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
-}
-.accordion button .icon {
-  display: inline-block;
-  position: absolute;
-  top: 4px;
-  right: 36px;
-  /* width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
-  background: var(--Dark-purple); */
-}
-.accordion button .icon::before {
-  display: block;
-  position: absolute;
-  content: url(../assets/images/icon-minus.svg);
-  top: 1px;
-  left: 5px;
-  /* width: 10px;
-  height: 2px;
-  background: var(--White); */
-}
-.accordion button .icon::after {
-  display: block;
-  position: absolute;
-  content: url(../assets/images/icon-plus.svg);
-  top: 1px;
-  left: 5px;
-}
-.accordion button[aria-expanded=true] {
-  color: var(--Dark-purple);
-}
-.accordion button[aria-expanded=true] .icon::after {
-  width: 0;
-}
-.accordion button[aria-expanded=true] + .accordion-content {
-  opacity: 1;
-  max-height: 7em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
-}
-
-#minus--id {
-  display: none;
-}
-#minus--id.show {
-  display: block;
-}
-#plus--id.hide {
-  display: none;
-}
-
-#ans-1 {
-  display: none;
-}
-#ans-1.show {
-  display: block;
-}
-#ans-1.hide {
-  display: none;
-}
-
-.accordion .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height;
-}
-.accordion .accordion-content p {
-  font-size: 1rem;
   font-weight: 400;
-  margin: 1em 0;
-  color: var(--Grayish-purple);
 }
-img {
+
+#minus--id,
+#minus--id2,
+#minus--id3,
+#minus--id4 {
+  display: none;
+}
+#minus--id.show,
+#minus--id2.show,
+#minus--id3.show,
+#minus--id4.show {
+  display: block;
+}
+#plus--id.hide,
+#plus--id2.hide,
+#plus--id3.hide,
+#plus--id4.hide {
+  display: none;
+}
+#ans-1,
+#ans-2,
+#ans-3,
+#ans-4 {
+  display: none;
+}
+#ans-1.show,
+#ans-2.show,
+#ans-3.show,
+#ans-4.show {
+  display: block;
+}
+#ans-1.hide,
+#ans-2.hide,
+#ans-3.hide,
+#ans-4.hide {
+  display: none;
+}
+
+.hd--img,
+.icon img {
   width: 20px;
   height: 20px;
 }
